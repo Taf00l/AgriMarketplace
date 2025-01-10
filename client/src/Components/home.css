@@ -1,0 +1,212 @@
+.hero {
+    height: 60vh;
+    margin: 2%;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.hero-buttons button {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.features {
+    display: flex; /* استخدام Flexbox */
+    justify-content: space-between; /* توزيع المستطيلات بمسافات متساوية */
+    align-items: stretch; /* ضمان نفس الارتفاع */
+    gap: 1rem; /* مسافة ثابتة بين المستطيلات */
+    margin: 2rem 0;
+}
+
+.feature1, .feature2, .feature3 {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd; /* حد خارجي */
+    border-radius: 8px; /* زوايا مستديرة */
+    flex: 1; /* التأكد من أن العناصر تأخذ نفس العرض */
+    background-color: #f9f9f9; /* لون الخلفية الافتراضي */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    min-height: 250px; /* ارتفاع أدنى للمستطيلات */
+}
+
+/* تخصيص ألوان الخلفية لكل عنصر */
+.feature1 {
+    background-color: rgba(199, 245, 146, 0.568);
+}
+
+.feature2 {
+    background-color: #f0f8ff;
+}
+
+.feature3 {
+    background-color: #fff7e6;
+}
+
+/* تنسيق النصوص */
+.pra {
+    color: rgb(164, 243, 73);
+    font-weight: bold;
+}
+/* القسم الرئيسي */
+.team-section {
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* عنوان القسم */
+  .team-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #2f4f4f;
+  }
+  
+  /* الوصف الفرعي */
+  .team-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* قسم الأعضاء */
+  .team-members .team-member {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* أيقونة العضو */
+  .member-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2f4f4f;
+  }
+  
+  /* اسم العضو */
+  .member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  /* دور العضو */
+  .member-role {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  /* وصف العضو */
+  .member-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;}
+    .services-section {
+      background-color: #f9f9f9;
+      padding: 2rem 0;
+    }
+    
+    .services-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .services-icon {
+      margin-bottom: 1rem;
+    }
+    
+    .services-image {
+      max-width: 100px;
+      height: auto;
+    }
+    
+    .services-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    
+    .services-description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .header {
+      background-color: #276e39; /* اللون الأخضر */
+    }
+    
+    .nav-link {
+      color: #fff !important; /* نص أبيض */
+      font-size: 1rem; /* حجم النص */
+      background-color: transparent !important;
+    }
+    
+    .nav-link:hover {
+      color: #d9d9d9; /* لون عند التمرير */
+    }
+    
+    .active {
+      font-weight: bold;
+      color: #defab1 !important; /* لون للصفحة النشطة */
+      background-color: #defab16b !important;
+    }
+  /* Darker background for the footer */
+.bg-dark-green {
+  background-color: #004d00; /* Darker green */
+}
+
+/* Style for footer headings */
+.footer-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Links styling */
+.footer-link {
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffcc00; /* Gold color on hover */
+}
+
+/* Email, phone, and social icons */
+.footer-icon {
+  margin-right: 10px;
+  color: #ffcc00; /* Color for icons */
+}
+
+.footer-icon:hover {
+  color: #fff; /* Change icon color on hover */
+}
+
+/* Footer description */
+.footer-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer copyright */
+.footer-copyright {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+        
+        

@@ -1,0 +1,7 @@
+static_sites:
+  - name: my-react-app
+    build_command: npm run build
+    publish_directory: /path/to/build
+    routes:
+      - source: /(.+)
+        destination: /index.html

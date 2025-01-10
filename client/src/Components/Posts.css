@@ -1,0 +1,38 @@
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-header {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .modal-body {
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .modal-footer {
+    justify-content: center;
+  }
+  
+  button {
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  button.confirm-delete {
+    background-color: #000;
+    color: #fff;
+    border: none;
+  }
+  
+  button.cancel {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  

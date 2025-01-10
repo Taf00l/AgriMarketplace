@@ -1,0 +1,75 @@
+/* تحسين مظهر البطاقة */
+.review-card {
+  background: linear-gradient(145deg, #ffffff, #f3f3f3); /* تدرج لوني خفيف */
+  border-radius: 15px;
+  padding: 25px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* تأثير الظلال */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* تحسين المسافة بين البطاقات */
+  position: relative;
+  overflow: hidden; /* إزالة الزوائد في الزوايا المنحنية */
+}
+
+/* تأثير hover لتحسين التفاعل */
+.review-card:hover {
+  transform: translateY(-8px); /* رفع البطاقة قليلاً عند التمرير */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2); /* زيادة الظل */
+}
+
+/* تحسين مظهر أيقونة الاقتباس */
+.quote-icon {
+  font-size: 3rem;
+  color: #a3a29f; /* لون ذهبي */
+  margin-bottom: 15px;
+}
+
+/* تحسين اسم المراجع */
+.reviewer-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+  font-family: 'Roboto', sans-serif; /* خط مميز */
+}
+
+/* تحسين نص المراجعة */
+.review-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* إضافة تباين جيد للمنتج */
+.review-message strong {
+  color: #222;
+}
+
+/* تحسين مظهر تاريخ المراجعة */
+.review-date {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #777;
+  position: absolute;
+  bottom: 20px; /* محاذاة التاريخ في الأسفل */
+  right: 20px; /* محاذاة التاريخ لليمين */
+}
+
+/* تحسين محاذاة الأعمدة عند وجود بطاقتين */
+@media (max-width: 768px) {
+  .review-card {
+      width: 100%; /* يجعل الأعمدة تأخذ العرض الكامل */
+      max-width: 500px; /* تحديد الحد الأقصى للعرض */
+      margin-left: auto;
+      margin-right: auto; /* محاذاة الأعمدة في الوسط */
+  }
+
+  .pagination-buttons {
+      margin-top: 20px;
+  }
+}

@@ -1,0 +1,12 @@
+# Enable URL rewriting for the web application
+
+# Allow direct access to index.html
+
+# Redirect all other requests to index.html unless they point to an existing file or directory
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
