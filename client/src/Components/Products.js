@@ -75,6 +75,7 @@ const Products = () => {
         <h3>The most popular products :</h3>
         <PupularProd />
       </Row>
+      <br></br><br></br><br></br>
       <Row>
         {products.map((product) => (
           <Col xs="12" sm="6" md="4" key={product._id} className="mb-4">

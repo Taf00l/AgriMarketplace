@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <h1>About this project</h1>
-      <p>This project is developed by: Salma and Tafoo.</p>
+      <p>This project is developed by: Salma and Tafool.</p>
       <p>Email: AgriMarketplace@gmail.com</p>
 
       <button>Contact developer</button>

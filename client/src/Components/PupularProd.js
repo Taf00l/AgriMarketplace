@@ -6,9 +6,9 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from "reactstrap";
-import pap from "../Images/pp.jpg"; // Image 1
+import pap from "../Images/pp.webp"; // Image 1
 import joz from "../Images/joz.png"; // Image 2
-import bna from "../Images/bna.jpg"; // Image 3
+import bna from "../Images/bna.webp"; // Image 3
 const items = [
   {
     src: pap,

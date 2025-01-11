@@ -122,22 +122,29 @@ const postsSlice = createSlice({
         state.status = "failed";
         state.error = action.error.message;
       })
+      .addCase(likePost.pending,(state)=>{
+        state.status="loading";
+      })
       .addCase(likePost.fulfilled, (state, action) => {
         state.status = "succeeded";
-        //Search the post id from the posts state
-        const updatedPostIndex = state.posts.findIndex(
-          (post) => post._id === action.payload._id
-        );
-
-        //If found, update the likes property of the found post to the current value of the likes
-        if (updatedPostIndex !== -1) {
-          state.posts[updatedPostIndex].likes = action.payload.likes;
+      
+        if (action.payload && action.payload._id) {
+          const updatedPostIndex = state.posts.findIndex(
+            (post) => post._id === action.payload._id
+          );
+      
+          if (updatedPostIndex !== -1) {
+            state.posts[updatedPostIndex].likes = action.payload.likes;
+          }
+        } else {
+          console.error("Invalid payload in likePost:", action.payload);
         }
       })
-      .addCase(likePost.rejected, (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message;
-      });
+      
+            .addCase(likePost.rejected, (state, action) => {
+              state.status = "failed";
+              state.error = action.error.message;
+            });
   },
 });
 export const { reset } = postsSlice.actions; //export the function

@@ -13,7 +13,6 @@ import Manage from "./Admin/Manage";
 import Cart from "./Components/Cart";
 import Products from "./Components/Products";
 import Register from "./Components/Register";
-import Liptint from "./Components/Liptint";
 import Profile from "./Components/Profile";
 import Order from "./Components/Order";
 import SharePosts from "./Components/SharePost";
@@ -48,7 +47,6 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/registerUser" element={<Register />} />
-            <Route path="/Liptint" element={<Liptint />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/order/:orderId" element={<Order />} />
             <Route path="/SharePost" element={<SharePosts />}></Route>
